@@ -12,7 +12,7 @@ module "bigquery" {
   description       = "some description" # updated the description accordingly
   expiration        = var.expiration
   project_id        = var.project_id
-  location          = "EUROPE" # Update location if needed
+  location          = var.location
   tables            = var.tables
   time_partitioning = var.time_partitioning
   dataset_labels    = var.dataset_labels
@@ -34,8 +34,8 @@ module "dataflow-job" {
   project_id        = var.project_id
   name              = format("%s:%s:%s", var.topic, var.dataset_name, var.tables[0].table_id) 
   on_delete         = "cancel"
-  zone              = "EUROPE"
-  region            = "EUROPE"
+  zone              = var.location
+  region            = var.location
   max_workers       = 1
   template_gcs_path = "gs://dataflow-templates/latest/PubSub_to_BigQuery"
   temp_gcs_location = "gs://<gcs_path_temp_data_bucket"

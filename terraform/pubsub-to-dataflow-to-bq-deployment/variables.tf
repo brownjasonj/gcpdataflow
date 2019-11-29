@@ -7,6 +7,12 @@ variable "project_id" {
   description = "Project wheree the dataset and table are created"
 }
 
+variable "location" {
+    description = "Location of resources"
+    default = "europe-west1"
+    type = string
+}
+
 variable "time_partitioning" {
   description = "Configures time-based partitioning for this table"
 }
