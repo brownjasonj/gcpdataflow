@@ -46,3 +46,6 @@ pull_subscriptions = [
 #      ack_deadline_seconds = 20 // optional
 #    }
 ]
+
+
+names = ["first"]

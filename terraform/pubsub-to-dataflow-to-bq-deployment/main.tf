@@ -1,5 +1,5 @@
 provider "google" {
-  version     = "~> 2.5.0"
+  version     = "~> 2.18.0"
   # Update credentials to the correct location, alternatively set   GOOGLE_APPLICATION_CREDENTIALS=/path/to/.ssh/bq-key.json in your shell session and   remove the credentials attribute.
   credentials = file("/Users/jason/.ssh/dev-bq-b4b7d0c88820.json") 
 }
@@ -19,12 +19,23 @@ module "bigquery" {
 }
 
 module "pubsub" {
-  source            = "terraform-google-modules/pubsub/google"
-  version           = "~> 1.0"
-  topic              = var.topic
-  project_id         = var.project_id
-  push_subscriptions = var.push_subscriptions
-  pull_subscriptions = var.pull_subscriptions
+  source                = "terraform-google-modules/pubsub/google"
+  version               = "~> 1.0"
+  topic                 = var.topic
+  project_id            = var.project_id
+  push_subscriptions    = var.push_subscriptions
+  pull_subscriptions    = var.pull_subscriptions
+}
+
+module "gcs_buckets" {
+  source                = "terraform-google-modules/cloud-storage/google"
+  version               = "1.0.0"
+  project_id            = var.project_id
+  location              = var.location
+  storage_class         = "REGION"
+  prefix                = format("%s-%s-%s", var.topic, var.dataset_name, var.tables[0].table_id)
+  names                 = ["first"]
+  bucket_policy_only    = { first = true}
 }
 
 module "dataflow-job" {
@@ -38,7 +49,7 @@ module "dataflow-job" {
   region            = var.location
   max_workers       = 1
   template_gcs_path = "gs://dataflow-templates/latest/PubSub_to_BigQuery"
-  temp_gcs_location = "gs://<gcs_path_temp_data_bucket"
+  temp_gcs_location = format("%s-%s-%s", var.topic, var.dataset_name, var.tables[0].table_id)
   parameters = {
         inputTopic=format("projects/%s/topics/%s", var.project_id, var.topic)
         outputTableSpec=format("%s:%s:%s", var.project_id, var.dataset_name, var.tables[0].table_id)

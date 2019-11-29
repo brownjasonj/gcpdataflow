@@ -9,7 +9,7 @@ variable "project_id" {
 
 variable "location" {
     description = "Location of resources"
-    default = "europe-west1"
+    default = "europe-west4"
     type = string
 }
 
@@ -65,3 +65,5 @@ variable "pull_subscriptions" {
     ack_deadline_seconds = number,
 }))
 }
+
+
