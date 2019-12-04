@@ -7,13 +7,13 @@ provider "google" {
 module "risk-stream" {
   source            = "./risk-stream-module" # Path to the module
   project_id        = "dev-bq-259909" 
-  zone                = "europe-west4-a"
-  region              = "europe-west4"
+  zone              = "europe-west4-a"
+  region            = "europe-west4"
   dataset_id        = "risks"
-  description       = "some description" # updated the description accordingly
-  topic_name        = "fred"
   table_name        = "fred"
   table_schema      = "./schemas/bq-address-schema.json"
+  description       = "some description" # updated the description accordingly
+  topic_name        = "fred"
   dataflow_name     = "fred2fred"
   dataflow_bucket   = "gs://dev-bq-bucket/dataflow"
 }

@@ -3,11 +3,6 @@ variable "project_id" {
   type          = string
 }
 
-variable "dataset_id" {
-  description   = "BigQuery dataset underwhich the stream table will be put"
-  type          = string
-}
-
 variable "description" {
   description   = "Description of the instance"
   type          = string
@@ -25,6 +20,11 @@ variable "region" {
 
 variable "topic_name" {
   description   = "Pubsub topic name to create"
+  type          = string
+}
+
+variable "dataset_id" {
+  description   = "BigQuery dataset underwhich the stream table will be put"
   type          = string
 }
 
