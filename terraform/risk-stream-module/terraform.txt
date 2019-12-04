@@ -1,0 +1,156 @@
+2019/12/04 15:22:00 [INFO] Terraform version: 0.12.16  
+2019/12/04 15:22:00 [INFO] Go runtime version: go1.12.13
+2019/12/04 15:22:00 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2019/12/04 15:22:00 [DEBUG] Attempting to open CLI config file: /Users/jason/.terraformrc
+2019/12/04 15:22:00 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/12/04 15:22:00 [INFO] CLI command args: []string{"plan"}
+2019/12/04 15:22:46 [INFO] Terraform version: 0.12.16  
+2019/12/04 15:22:46 [INFO] Go runtime version: go1.12.13
+2019/12/04 15:22:46 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2019/12/04 15:22:46 [DEBUG] Attempting to open CLI config file: /Users/jason/.terraformrc
+2019/12/04 15:22:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/12/04 15:22:46 [INFO] CLI command args: []string{"plan"}
+2019/12/04 15:23:09 [INFO] Terraform version: 0.12.16  
+2019/12/04 15:23:09 [INFO] Go runtime version: go1.12.13
+2019/12/04 15:23:09 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2019/12/04 15:23:09 [DEBUG] Attempting to open CLI config file: /Users/jason/.terraformrc
+2019/12/04 15:23:09 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/12/04 15:23:09 [INFO] CLI command args: []string{"plan"}
+2019/12/04 15:23:09 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2019/12/04 15:23:09 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2019/12/04 15:23:09 [DEBUG] New state was assigned lineage "fb1cf9db-d6ca-78b0-303d-2a02ee694828"
+2019/12/04 15:23:09 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2019/12/04 15:23:09 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2019/12/04 15:23:09 [DEBUG] checking for provider in "."
+2019/12/04 15:23:09 [DEBUG] checking for provider in "/usr/local/bin"
+2019/12/04 15:23:09 [DEBUG] checking for provisioner in "."
+2019/12/04 15:23:09 [DEBUG] checking for provisioner in "/usr/local/bin"
+2019/12/04 15:23:09 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2019/12/04 15:23:09 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2019/12/04 15:23:09 [INFO] backend/local: starting Plan operation
+2019/12/04 15:23:09 [TRACE] backend/local: requesting state manager for workspace "default"
+2019/12/04 15:23:09 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2019/12/04 15:23:09 [TRACE] backend/local: requesting state lock for workspace "default"
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2019/12/04 15:23:09 [TRACE] backend/local: reading remote state for workspace "default"
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2019/12/04 15:23:09 [TRACE] statemgr.Filesystem: read nil snapshot
+2019/12/04 15:23:09 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2019/12/04 15:23:09 [TRACE] backend/local: building context for current working directory
+2019/12/04 15:23:09 [DEBUG] backend/local: will prompt for input of unset required variables [project_id dataset_id description zone region table_name dataflow_name topic_name table_schema dataflow_bucket]
+2019/12/04 15:23:09 [DEBUG] command: asking for input: "var.dataflow_bucket"
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "dataflow_bucket": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "dataflow_name": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "dataset_id": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "description": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "project_id": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "region": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "table_name": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "table_schema": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "topic_name": interrupted
+2019/12/04 15:23:13 [WARN] backend/local: Failed to request user input for variable "zone": interrupted
+2019/12/04 15:23:13 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2019/12/04 15:23:13 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2019/12/04 15:23:45 [INFO] Terraform version: 0.12.16  
+2019/12/04 15:23:45 [INFO] Go runtime version: go1.12.13
+2019/12/04 15:23:45 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2019/12/04 15:23:45 [DEBUG] Attempting to open CLI config file: /Users/jason/.terraformrc
+2019/12/04 15:23:45 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/12/04 15:23:45 [INFO] CLI command args: []string{"plan"}
+2019/12/04 15:23:45 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2019/12/04 15:23:45 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2019/12/04 15:23:45 [DEBUG] New state was assigned lineage "35dc387c-e3c3-ee90-44a2-15f5c74771ac"
+2019/12/04 15:23:45 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2019/12/04 15:23:45 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2019/12/04 15:23:45 [DEBUG] checking for provider in "."
+2019/12/04 15:23:45 [DEBUG] checking for provider in "/usr/local/bin"
+2019/12/04 15:23:45 [DEBUG] checking for provisioner in "."
+2019/12/04 15:23:45 [DEBUG] checking for provisioner in "/usr/local/bin"
+2019/12/04 15:23:45 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2019/12/04 15:23:45 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2019/12/04 15:23:45 [INFO] backend/local: starting Plan operation
+2019/12/04 15:23:45 [TRACE] backend/local: requesting state manager for workspace "default"
+2019/12/04 15:23:45 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2019/12/04 15:23:45 [TRACE] backend/local: requesting state lock for workspace "default"
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2019/12/04 15:23:45 [TRACE] backend/local: reading remote state for workspace "default"
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2019/12/04 15:23:45 [TRACE] statemgr.Filesystem: read nil snapshot
+2019/12/04 15:23:45 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2019/12/04 15:23:45 [TRACE] backend/local: building context for current working directory
+2019/12/04 15:23:45 [DEBUG] backend/local: will prompt for input of unset required variables [dataflow_name dataflow_bucket zone topic_name description region table_name table_schema project_id dataset_id]
+2019/12/04 15:23:45 [DEBUG] command: asking for input: "var.dataflow_bucket"
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "dataflow_bucket": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "dataflow_name": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "dataset_id": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "description": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "project_id": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "region": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "table_name": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "table_schema": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "topic_name": interrupted
+2019/12/04 15:23:49 [WARN] backend/local: Failed to request user input for variable "zone": interrupted
+2019/12/04 15:23:49 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2019/12/04 15:23:49 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
+2019/12/04 15:24:34 [INFO] Terraform version: 0.12.16  
+2019/12/04 15:24:34 [INFO] Go runtime version: go1.12.13
+2019/12/04 15:24:34 [INFO] CLI args: []string{"/usr/local/bin/terraform", "plan"}
+2019/12/04 15:24:34 [DEBUG] Attempting to open CLI config file: /Users/jason/.terraformrc
+2019/12/04 15:24:34 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2019/12/04 15:24:34 [INFO] CLI command args: []string{"plan"}
+2019/12/04 15:24:34 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2019/12/04 15:24:34 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2019/12/04 15:24:34 [DEBUG] New state was assigned lineage "676a3a14-36a8-6baf-0375-4c29f24190c1"
+2019/12/04 15:24:34 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2019/12/04 15:24:34 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2019/12/04 15:24:34 [DEBUG] checking for provider in "."
+2019/12/04 15:24:34 [DEBUG] checking for provider in "/usr/local/bin"
+2019/12/04 15:24:34 [DEBUG] checking for provisioner in "."
+2019/12/04 15:24:34 [DEBUG] checking for provisioner in "/usr/local/bin"
+2019/12/04 15:24:34 [INFO] Failed to read plugin lock file .terraform/plugins/darwin_amd64/lock.json: open .terraform/plugins/darwin_amd64/lock.json: no such file or directory
+2019/12/04 15:24:34 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2019/12/04 15:24:34 [INFO] backend/local: starting Plan operation
+2019/12/04 15:24:34 [TRACE] backend/local: requesting state manager for workspace "default"
+2019/12/04 15:24:34 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2019/12/04 15:24:34 [TRACE] backend/local: requesting state lock for workspace "default"
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: locking terraform.tfstate using fcntl flock
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2019/12/04 15:24:34 [TRACE] backend/local: reading remote state for workspace "default"
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2019/12/04 15:24:34 [TRACE] statemgr.Filesystem: read nil snapshot
+2019/12/04 15:24:34 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2019/12/04 15:24:34 [TRACE] backend/local: building context for current working directory
+2019/12/04 15:24:34 [DEBUG] backend/local: will prompt for input of unset required variables [dataflow_bucket description zone region topic_name dataflow_name project_id dataset_id table_name table_schema]
+2019/12/04 15:24:34 [DEBUG] command: asking for input: "var.dataflow_bucket"
+2019/12/04 15:24:36 [DEBUG] command: asking for input: "var.dataflow_name"
+2019/12/04 15:24:37 [DEBUG] command: asking for input: "var.dataset_id"
+2019/12/04 15:24:40 [DEBUG] command: asking for input: "var.description"
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "description": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "project_id": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "region": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "table_name": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "table_schema": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "topic_name": interrupted
+2019/12/04 15:24:42 [WARN] backend/local: Failed to request user input for variable "zone": interrupted
+2019/12/04 15:24:42 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2019/12/04 15:24:42 [TRACE] statemgr.Filesystem: unlocking terraform.tfstate using fcntl flock
